@@ -2,6 +2,7 @@ import unittest
 from unittest.mock import patch, MagicMock
 from what_is_year_now import what_is_year_now
 
+
 class TestWhatIsYearNow(unittest.TestCase):
 
     @patch('urllib.request.urlopen')
@@ -28,6 +29,7 @@ class TestWhatIsYearNow(unittest.TestCase):
         mock_urlopen.return_value = mocked_data
         with self.assertRaises(ValueError):
             self.assertEqual(what_is_year_now(), 2019)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,6 +1,7 @@
 from one_hot_encoder import fit_transform
 import unittest
 
+
 class TestOneHotEncoder(unittest.TestCase):
     def test_fit_transform(self):
         cities = ['Moscow', 'New York', 'Moscow', 'London']
@@ -18,7 +19,6 @@ class TestOneHotEncoder(unittest.TestCase):
         exp_transformed_cities = [('Moscow', [1])]
         transformed_cities = fit_transform(cities)
         self.assertEqual(transformed_cities, exp_transformed_cities)
-
 
     def test_fit_transform_with_equal_arg(self):
         cities = ['Moscow', 'Moscow']
@@ -43,7 +43,7 @@ class TestOneHotEncoder(unittest.TestCase):
         cities = ['Moscow', 'New York', 'Moscow', 'London']
         transformed_cities = fit_transform(cities)
         self.assertIsInstance(transformed_cities, list)
-        
+
 
 if __name__ == '__main__':
     unittest.main()
