@@ -1,0 +1,11 @@
+test_check_output_type (ohe_tests.TestOneHotEncoder) ... ok
+test_fit_transform (ohe_tests.TestOneHotEncoder) ... ok
+test_fit_transform_with_empty_arg (ohe_tests.TestOneHotEncoder) ... ok
+test_fit_transform_with_equal_arg (ohe_tests.TestOneHotEncoder) ... ok
+test_fit_transform_with_one_arg (ohe_tests.TestOneHotEncoder) ... ok
+test_with_wrong_arg_type (ohe_tests.TestOneHotEncoder) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/mikhail/anaconda3/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/mikhail/AVITO_STUDY/AVITO_COURSE/PYTHON/PYTHON_HW_4/issue_04/.hypothesis/examples')
+rootdir: /home/mikhail/AVITO_STUDY/AVITO_COURSE/PYTHON/PYTHON_HW_4/issue_04
+plugins: Faker-15.0.0, openfiles-0.4.0, arraydiff-0.3, astropy-header-0.1.2, remotedata-0.3.2, hypothesis-5.5.4, doctestplus-0.5.0
+collecting ... collected 4 items
+
+ohe_tests.py::test_fit_transform[test_input0-expected0] PASSED           [ 25%]
+ohe_tests.py::test_fit_transform[test_input1-expected1] PASSED           [ 50%]
+ohe_tests.py::test_fit_transform[test_input2-expected2] PASSED           [ 75%]
+ohe_tests.py::test_try_encode_wrong_type PASSED                          [100%]
+
+============================== 4 passed in 0.03s ===============================

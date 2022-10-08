@@ -1,12 +1,13 @@
+from typing import List
 
 class CountVectorizer:
-    """ CountVectorizer class implementation """
+    '''CountVectorizer class implementation'''
     def __init__(self, lowercase=True):
 
         self.lowercase = lowercase
         self.unique_words = None
 
-    def fit_transform(self, corpus):
+    def fit_transform(self, corpus: List[str]) -> List[List[str]]:
         '''Function returns count matrix'''
 
         if self.lowercase:
@@ -19,9 +20,7 @@ class CountVectorizer:
             unique_words.update(doc.split())
 
         unique_words = list(unique_words)
-
         unique_words.sort()  # for reproducibility
-
         self.unique_words = unique_words
 
         count_matrix = []
@@ -41,4 +40,7 @@ class CountVectorizer:
 
     def get_feature_names(self):
         '''Function returns list of unique words'''
+        if not self.unique_words:
+            raise ValueError('Fit the vectorizer first')
         return self.unique_words
+        

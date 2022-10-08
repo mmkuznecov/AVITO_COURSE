@@ -1,0 +1,8 @@
+test_dmy_date (wiyn_tests.TestWhatIsYearNow) ... ok
+test_invalid_date (wiyn_tests.TestWhatIsYearNow) ... ok
+test_ymd_date (wiyn_tests.TestWhatIsYearNow) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK

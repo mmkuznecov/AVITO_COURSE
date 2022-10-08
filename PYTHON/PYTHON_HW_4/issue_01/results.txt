@@ -1,0 +1,46 @@
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('SOS SOS')
+Expecting:
+    '... --- ...   ... --- ...'
+ok
+Trying:
+    encode('A')
+Expecting:
+    '.-'
+ok
+Trying:
+    encode('HELLO WORLD')
+Expecting:
+    '.... . .-.. .-.. ---   .-- --- .-. .-.. -..'
+ok
+Trying:
+    encode('example')
+Expecting:
+    Traceback (most recent call last):
+        ...
+    KeyError: 'e'
+ok
+Trying:
+    encode('SOS!')
+Expecting:
+    Traceback (most recent call last):
+        ...
+    KeyError: '!'
+ok
+Trying:
+    encode('PRETTY LONG MESSAGE') # doctest: +ELLIPSIS
+Expecting:
+    '.--. .-. . - - -.--   .-.. --- -. --.   -- . ... ... .- --. .'
+ok
+1 items had no tests:
+    __main__
+1 items passed all tests:
+   7 tests in __main__.encode
+7 tests in 2 items.
+7 passed and 0 failed.
+Test passed.

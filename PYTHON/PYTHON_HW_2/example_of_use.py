@@ -10,22 +10,24 @@ vectorizer = CountVectorizer()
 count_matrix = vectorizer.fit_transform(corpus)
 
 
-print("Count matrix:")
-print(count_matrix)
+if __name__ == '__main__':
 
-print("Feature names:")
-print(vectorizer.get_feature_names())
+    print("Count matrix:")
+    print(count_matrix)
 
-# Let's compare the results with sklearn's CountVectorizer for fun
+    print("Feature names:")
+    print(vectorizer.get_feature_names())
 
-skl_count_vectorizer = SklearnCountVectorizer()
-skl_count_matrix = skl_count_vectorizer.fit_transform(corpus)
+    # Let's compare the results with sklearn's CountVectorizer for fun
 
-print("Sklearn count matrix:")
-print(skl_count_matrix.toarray())
+    skl_count_vectorizer = SklearnCountVectorizer()
+    skl_count_matrix = skl_count_vectorizer.fit_transform(corpus)
 
-print("Sklearn feature names:")
-print(skl_count_vectorizer.get_feature_names())
+    print("Sklearn count matrix:")
+    print(skl_count_matrix.toarray())
+
+    print("Sklearn feature names:")
+    print(skl_count_vectorizer.get_feature_names())
 
 '''
 Output:
